@@ -1,12 +1,27 @@
 "use client";
 
+import { useEffect } from "react";
+
 interface MektupOverlayProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
 export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
+
+  const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) onClose();
+  };
 
   return (
     <div
@@ -14,8 +29,13 @@ export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
       role="dialog"
       aria-modal="true"
       aria-label="Mektup"
+      onClick={handleBackdropClick}
     >
-      <div className="relative w-[90%] max-w-[480px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7]">
+      <div
+        className="relative w-[90%] max-w-[480px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7]"
+        onClick={(e) => e.stopPropagation()}
+        role="document"
+      >
         <button
           type="button"
           onClick={onClose}
