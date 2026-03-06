@@ -25,14 +25,14 @@ export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-5"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-5 animate-overlay-fade"
       role="dialog"
       aria-modal="true"
       aria-label="Mektup"
       onClick={handleBackdropClick}
     >
       <div
-        className="relative w-[90%] max-w-[480px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7]"
+        className="relative w-[90%] max-w-[480px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7] animate-mektup-acil"
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
