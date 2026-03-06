@@ -24,8 +24,10 @@ export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
         >
           ×
         </button>
-        <div className="pt-4">
-          Mektup içeriği buraya gelecek.
+        <div id="mektup-icerik" className="pt-4">
+          Yo coder!
+          <br /><br />
+          Biliyorum, mektup almak biraz legacy gibi geliyor ama merak etme, bu satırlar deploy edilmeye hazır ve bug içermez… umarım. Hayat full stack gibi karmaşık, bazen frontend'i anlıyorsun, backend'i kaybediyorsun, ama olsun, bu satırları okurken küçük bir debug yapmış gibi gülümsemeni sağlıyorum. Eğer hâlâ gülmedinse, sorun senin console.log'unda olabilir. 😎
         </div>
       </div>
     </div>
