@@ -1,6 +1,14 @@
 # Mektup
 
-Mektup uygulaması — Next.js, TypeScript ve Tailwind CSS ile geliştirildi.
+Zarf görseline tıklayınca açılan, mektup metni ve kapatma butonu olan tek sayfalık web uygulaması. Next.js, TypeScript ve Tailwind CSS ile geliştirildi.
+
+## Özellikler
+
+- Zarf görseli ile ana sayfa
+- Tıklanınca açılan mektup (overlay)
+- Kapatma butonu (×) ve overlay dışına tıklayınca kapanma
+- Escape tuşu ile kapatma
+- Açılış animasyonları (Tailwind)
 
 ## Teknolojiler
 
