@@ -17,6 +17,8 @@ npm run dev
 
 Tarayıcıda [http://localhost:3000](http://localhost:3000) adresini açın.
 
+**Not:** Zarf görseli `public/zarf.png` konumunda olmalı (Next.js bunu `/zarf.png` olarak sunar). Görsel görünmüyorsa `public/` klasörünü kontrol edin.
+
 ## Scripts
 
 - `npm run dev` — Geliştirme sunucusu
