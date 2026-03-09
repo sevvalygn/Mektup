@@ -1,7 +1,5 @@
 # Mektup
 
-# Mektup
-
 Bu proje, ekranda bir **zarf** gösteren ve zarfın üzerine tıkladığınızda **mektup** (beyaz bir kağıt) açan küçük bir web uygulamasıdır. Mektupta kısa bir mesaj vardır; sağ üstteki **×** ile, dışarı tıklayarak veya **Escape** tuşu ile kapatabilirsiniz.
 
 Proje **Next.js**, **TypeScript** ve **Tailwind CSS** ile yazılmıştır. Bu dosya (README), projeyi hiç bilmeyen birinin okuyup bilgisayarında çalıştırabilmesi için hazırlanmıştır.

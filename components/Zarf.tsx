@@ -9,7 +9,7 @@ export default function Zarf({ onClick }: ZarfProps) {
     <button
       type="button"
       onClick={onClick}
-      className="block max-w-[90%] max-h-[90vh] w-auto h-auto cursor-pointer shadow-[0_12px_40px_rgba(0,0,0,0.5)] hover:opacity-95 transition-opacity focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-[#1a1a2e] bg-transparent border-0 p-0"
+      className="block max-w-[90%] max-h-[90vh] w-auto h-auto cursor-pointer shadow-[0_12px_40px_rgba(0,0,0,0.5)] hover:opacity-95 transition-opacity focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white bg-transparent border-0 p-0"
       aria-label="Mektup zarfı — tıklayarak aç"
     >
       {/* public/zarf.png olmalı; Next.js bunu /zarf.png olarak sunar */}
