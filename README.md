@@ -1,5 +1,4 @@
 # Mektup
-# Mektup
 
 Bu proje, ekranda bir **zarf** gösteren ve zarfın üzerine tıkladığınızda **mektup** (beyaz bir kağıt) açan küçük bir web uygulamasıdır. Mektupta kısa bir mesaj vardır; sağ üstteki **×** ile, dışarı tıklayarak veya **Escape** tuşu ile kapatabilirsiniz.
 
@@ -155,6 +154,3 @@ Sonra tarayıcıda **http://localhost:3000** adresine gidin.
   - `npm run lint` — Kod kontrolü (ESLint)  
 - **Zarf görseli:** `public/zarf.png` dosyasından gelir; bu dosya yoksa zarf görünmez.  
 - **İnternette yayınlama:** Proje [Vercel](https://vercel.com) ile deploy edilebilir; GitHub'daki **sevvalygn/Mektup** reposu Vercel'e bağlanarak canlıya alınabilir. Vercel'de "Add New Project" → bu repoyu seçin → **Deploy** ile yayına alın.
-
-
-
