@@ -25,14 +25,14 @@ export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-5"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-5 animate-overlay-fade"
       role="dialog"
       aria-modal="true"
       aria-label="Mektup"
       onClick={handleBackdropClick}
     >
       <div
-        className="relative w-[90%] max-w-[480px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7]"
+        className="relative w-[90%] max-w-[480px] min-h-[200px] max-h-[85vh] overflow-y-auto rounded-sm bg-[#fffef9] p-12 shadow-[0_16px_48px_rgba(0,0,0,0.3)] text-[#2c2c2c] font-serif text-[17px] leading-[1.7] animate-mektup-acil"
         onClick={(e) => e.stopPropagation()}
         role="document"
       >
@@ -44,7 +44,7 @@ export default function MektupOverlay({ isOpen, onClose }: MektupOverlayProps) {
         >
           ×
         </button>
-        <div id="mektup-icerik" className="pt-4">
+        <div id="mektup-icerik" className="pt-4 min-h-[120px]">
           Yo coder!
           <br /><br />
           Biliyorum, mektup almak biraz legacy gibi geliyor ama merak etme, bu satırlar deploy edilmeye hazır ve bug içermez… umarım. Hayat full stack gibi karmaşık, bazen frontend'i anlıyorsun, backend'i kaybediyorsun, ama olsun, bu satırları okurken küçük bir debug yapmış gibi gülümsemeni sağlıyorum. Eğer hâlâ gülmedinse, sorun senin console.log'unda olabilir. 😎
